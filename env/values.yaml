@@ -18,13 +18,14 @@ expose:
   - --v
   - 4
   config:
-    domain: jxeks-cloud
+    domain: 34.216.146.133.nip.io
     exposer: Ingress
     http: "true"
 jenkins:
   Servers:
     Global:
       EnvVars:
+        DOCKER_REGISTRY: 228804139688.dkr.ecr.us-west-2.amazonaws.com
         TILLER_NAMESPACE: kube-system
   enabled: false
 prow: {}
